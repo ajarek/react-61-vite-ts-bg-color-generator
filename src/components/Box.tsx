@@ -1,12 +1,14 @@
 import React from 'react'
 type Props={
   bg: string
+  hex: string
+  color: string
  }
-const Box = ({bg}:Props) => {
+const Box = ({bg,hex,color}:Props) => {
   return (
-    <div className='box' style={{background:bg}}>
+    <div className='box' style={{background:bg, color:color}}>
       <p>{bg}</p>
-      <p> #FF00FF</p>
+      <p>{hex}</p>
       </div>
   )
 }
